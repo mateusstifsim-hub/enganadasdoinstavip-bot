@@ -6,9 +6,9 @@ TOKEN = "7953201676:AAH_jLpht_iI1GVdAFjaxHOqxNP8oaAnZG4"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     teclado = [
-        [InlineKeyboardButton("📅 1 Semana - R$9,90", callback_data="1semana")],
-        [InlineKeyboardButton("🗓️ 1 Mês - R$15,90", callback_data="1mes")],
-        [InlineKeyboardButton("♾️ Vitalício - R$39,90", callback_data="vitalicio")],
+        [InlineKeyboardButton("📅 1 Semana - R$5,90", callback_data="1semana")],
+        [InlineKeyboardButton("🗓️ 1 Mês - R$10,00", callback_data="1mes")],
+        [InlineKeyboardButton("♾️ Vitalício - R$15,00", callback_data="vitalicio")],
     ]
     markup = InlineKeyboardMarkup(teclado)
 
@@ -22,9 +22,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "VAI CONTINUAR CURIOSO OU VAI VER DE VERDADE? 😈👇"
     )
 
-    await update.message.reply_video(
-        video="FILE_ID_DO_VIDEO",
-        caption=texto,
+    await update.message.reply_text(
+        text=texto,
         reply_markup=markup
     )
 
