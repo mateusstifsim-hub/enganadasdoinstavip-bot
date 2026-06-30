@@ -58,7 +58,7 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if query.data == "1semana":
         asyncio.create_task(enviar_recuperacao(context, chat_id))
-        await query.edit_message_caption(
+        await query.edit_message_text(
             caption=(
                 "📅 Você escolheu 1 Semana por R$9,90!\n\n"
                 "⚡ OFERTA RELÂMPAGO — SÓ AGORA!\n\n"
@@ -67,30 +67,30 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "👇 Escolha como quer prosseguir:"
             ),
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔥 Quero o Mês por R$12,90!", url="https://pay.cakto.com.br/zny2oym")],
-                [InlineKeyboardButton("📅 Manter 1 Semana por R$9,90", url="https://pay.cakto.com.br/fcuqim4_948367")],
+                [InlineKeyboardButton("🔥 Quero o Mês por R$10,00!", url="https://pay.cakto.com.br/zny2oym")],
+                [InlineKeyboardButton("📅 Manter 1 Semana por R$5,90", url="https://pay.cakto.com.br/fcuqim4_948367")],
                 [InlineKeyboardButton("🔙 Voltar", callback_data="voltar")],
             ])
         )
     elif query.data == "1mes":
         asyncio.create_task(enviar_recuperacao(context, chat_id))
-        await query.edit_message_caption(
+        await query.edit_message_text(
             caption=(
-                "🗓️ Você escolheu 1 Mês por R$15,90!\n\n"
+                "🗓️ Você escolheu 1 Mês por R$10,00!\n\n"
                 "♾️ ESPERA — VIU ISSO?\n\n"
                 "Por apenas R$24,00 a mais você garante acesso VITALÍCIO.\n"
                 "Paga uma vez, acessa para sempre. 😈\n\n"
                 "👇 Escolha como quer prosseguir:"
             ),
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("♾️ Quero o Vitalício por R$39,90!", url="https://pay.cakto.com.br/3fmdjoc")],
-                [InlineKeyboardButton("🗓️ Manter 1 Mês por R$15,90", url="https://pay.cakto.com.br/zny2oym")],
+                [InlineKeyboardButton("♾️ Quero o Vitalício por R$15,0!", url="https://pay.cakto.com.br/3fmdjoc")],
+                [InlineKeyboardButton("🗓️ Manter 1 Mês por R$10,0", url="https://pay.cakto.com.br/zny2oym")],
                 [InlineKeyboardButton("🔙 Voltar", callback_data="voltar")],
             ])
         )
     elif query.data == "vitalicio":
         asyncio.create_task(enviar_recuperacao(context, chat_id))
-        await query.edit_message_caption(
+        await query.edit_message_text(
             caption=(
                 "♾️ Você escolheu o Vitalício por R$39,90!\n\n"
                 "Paga uma vez e nunca mais se preocupa. Acesso para sempre. 😈\n\n"
@@ -103,11 +103,11 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
     elif query.data == "voltar":
         teclado = [
-            [InlineKeyboardButton("📅 1 Semana - R$9,90", callback_data="1semana")],
-            [InlineKeyboardButton("🗓️ 1 Mês - R$15,90", callback_data="1mes")],
-            [InlineKeyboardButton("♾️ Vitalício - R$39,90", callback_data="vitalicio")],
+            [InlineKeyboardButton("📅 1 Semana - R$5,90", callback_data="1semana")],
+            [InlineKeyboardButton("🗓️ 1 Mês - R$10,00", callback_data="1mes")],
+            [InlineKeyboardButton("♾️ Vitalício - R$15,00", callback_data="vitalicio")],
         ]
-        await query.edit_message_caption(
+        await query.edit_message_text(
             caption=(
                 "🔞 O QUE ELAS NÃO MOSTRAM NO INSTAGRAM, TÁ AQUI 🔞\n\n"
                 "Aquelas que posam de recatadas por lá? Aqui elas aparecem do jeito que você queria ver.\n\n"
