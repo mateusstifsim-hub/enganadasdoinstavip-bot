@@ -13,13 +13,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     markup = InlineKeyboardMarkup(teclado)
 
     texto = (
-        "🔞 O QUE ELAS NÃO MOSTRAM NO INSTAGRAM, TÁ AQUI 🔞\n\n"
-        "Aquelas que posam de recatadas por lá? Aqui elas aparecem do jeito que você queria ver.\n\n"
-        "🔥 Vazados, conteúdos exclusivos, fotos e vídeos que saíram do Instagram VIP delas.\n"
-        "📉 PREÇO PROMOCIONAL: Só hoje: R$ 15,00 (Pagamento único!)\n"
+        "🔞 DERAM MOLE E A INTERNET NÃO ESQUECEU 🔞\n\n"
+        "Gostosas que acharam que ninguém ia ver. Erraram feio.\n\n"
+        "🔥 Tudo aqui dentro: flagras, vazados, momentos que elas queriam apagar.\n"
+        "📉 PREÇO PROMOCIONAL: Só hoje R$15,00 (Pagamento único!)\n"
         "✅ Acesso Instantâneo\n"
         "✅ Sigilo Absoluto\n\n"
-        "VAI CONTINUAR CURIOSO OU VAI VER DE VERDADE? 😈👇"
+        "VAI FICAR DE FORA OU VAI VER O QUE ELA NÃO QUERIA? 😈👇"
     )
 
     await update.message.reply_text(text=texto, reply_markup=markup)
@@ -40,8 +40,8 @@ async def enviar_recuperacao(context, chat_id):
         chat_id=chat_id,
         text=(
             "😈 Ei... você quase entrou.\n\n"
-            "Sabe o que tá te esperando lá dentro? Conteúdo que você não vai achar em lugar nenhum. "
-            "Aquelas que você segue no Instagram, aparecendo do jeito que você sempre quis ver.\n\n"
+            "Sabe o que tá te esperando lá dentro? Flagras e vazados de gostosas que deram mole "
+            "e não puderam fazer nada. Conteúdo que você não acha em lugar nenhum.\n\n"
             "🔥 Ainda dá tempo. Mas não por muito.\n\n"
             "👇 Escolha seu plano e entra agora:"
         ),
@@ -60,7 +60,7 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "📅 Você escolheu 1 Semana por R$5,90!\n\n"
                 "⚡ OFERTA RELÂMPAGO — SÓ AGORA!\n\n"
                 "Por apenas R$10,00 você leva o mês inteiro!\n"
-                "4x mais conteúdo por uma diferença pequena. 🔥\n\n"
+                "Muito mais conteúdo por uma diferença pequena. 🔥\n\n"
                 "👇 Escolha como quer prosseguir:"
             ),
             reply_markup=InlineKeyboardMarkup([
@@ -106,13 +106,13 @@ async def botao_clicado(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ]
         await query.edit_message_text(
             text=(
-                "🔞 O QUE ELAS NÃO MOSTRAM NO INSTAGRAM, TÁ AQUI 🔞\n\n"
-                "Aquelas que posam de recatadas por lá? Aqui elas aparecem do jeito que você queria ver.\n\n"
-                "🔥 Vazados, conteúdos exclusivos, fotos e vídeos que saíram do Instagram VIP delas.\n"
-                "📉 PREÇO PROMOCIONAL: Só hoje: R$ 15,00 (Pagamento único!)\n"
+                "🔞 DERAM MOLE E A INTERNET NÃO ESQUECEU 🔞\n\n"
+                "Gostosas que acharam que ninguém ia ver. Erraram feio.\n\n"
+                "🔥 Tudo aqui dentro: flagras, vazados, momentos que elas queriam apagar.\n"
+                "📉 PREÇO PROMOCIONAL: Só hoje R$15,00 (Pagamento único!)\n"
                 "✅ Acesso Instantâneo\n"
                 "✅ Sigilo Absoluto\n\n"
-                "VAI CONTINUAR CURIOSO OU VAI VER DE VERDADE? 😈👇"
+                "VAI FICAR DE FORA OU VAI VER O QUE ELA NÃO QUERIA? 😈👇"
             ),
             reply_markup=InlineKeyboardMarkup(teclado)
         )
